@@ -1,0 +1,559 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+  position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    transition: 0,5s;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+}
+/*nav*/
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style:none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight:90px ;
+    
+    
+}
+.nav-item{
+    position: relative;
+    margin-left: 80px;
+    left :30px;
+    font-size: 25px;
+    padding-top: 40px ;
+}
+.nav-itemm{
+    position: relative;
+    margin-right: 80px;
+    right :30px;
+    font-size: 25px;
+    padding-top: 40px ;
+}
+/*
+
+*/
+header .navbar li a:hover{
+    color: rgb(255, 153, 0);
+    border-bottom: 2px solid #fb911f ;
+}
+/*accueil*/
+.accueil{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(golden-cutlery-with-textile-plate-dark-background-top-view.jpg);
+    background-size:100% 99%;
+     }
+     
+     
+.accueil .contenu{
+    max-width:70% ;
+    text-align: center;
+}
+.accueil .contenu h2{
+    color:rgb(243, 241, 239);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    font-weight: bold;
+    font-style: italic;
+    text-align:center ;
+
+}
+.btn-reserve{
+    padding: 10px 20px ;
+    background-color:rgb(255, 153, 0);
+    text-transform: uppercase;
+    border-radius: 20PX;
+    cursor: pointer;
+    color:#fff;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    text-decoration: none; 
+    font-size: 20px;   
+    position: relative;
+    top: 40px;
+}
+.btn-reserve:hover{
+    background-color: rgb(167, 161, 154);
+    text-decoration: none;
+    transition: ease-in-out;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    
+}
+/*about*/
+.titletext{
+    margin-top:60px;    
+    font-size:30px;
+    font-weight: 400px;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    color: #fb911f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    letter-spacing: 9px;
+}
+.PA{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+}
+.GOOD{
+    font-weight: bold;
+    color: rgb(92, 91, 91);
+    letter-spacing: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img2{
+    text-align: center;
+    margin-left: 100px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+/*Menu*/
+
+#menu{
+   background-image: linear-gradient(to bottom, rgb(7, 7, 7), rgba(12, 12, 12, 0));;
+}
+.div1{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+   
+.titletext2{
+    margin-top:60px;    
+    font-size:30px;
+    font-weight: 400px;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    color: #fb701f;
+    font-family:cursive;
+}
+/*card*/
+.row{
+    margin: 20px;
+    padding: 20px;
+    padding-left: 30px;
+}
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .btnMenu{
+    padding: 10px 20px ;
+    background-color:rgb(255, 153, 0);
+    text-transform: uppercase;
+    border-radius: 20PX;
+    cursor: pointer;
+    color:#fff;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    text-decoration: none; 
+    font-size: 20px;   
+    position: relative;
+    top: 40px;
+}
+.btnMenu:hover{
+    background-color: rgb(167, 161, 154);
+    text-decoration: none;
+    transition: ease-in-out;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+  }
+
+ /*expert*/ 
+  section.card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #000000;
+    background-color: #f2f2f2;
+    color: #ffffff;
+  }
+  
+  .card__content {
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+  }
+
+  .col-md-3{
+    margin-left : 10px;
+  }
+  
+/*offres*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(0.9);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box span::before {
+    content: 'Offre';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+.container .card_box{
+  margin-left: 20px;
+ margin-top: 30px;
+  
+}
+#offre1{
+  background-image: url(offre2.jpg);
+  background-size: 200px 250px;
+}
+#offre2{
+  background-image: url(offre3.jpg);
+  background-size: 200px 250px;
+}
+#offre3{
+  background-image: url(ofrre4.jpg);
+  background-size: 200px 250px;
+}
+#offre4{
+  background-image: url(offre5.jpg);
+  background-size: 200px 250px;
+}
+#offre5{
+  background-image: url(ofrre6.jpg);
+  background-size: 200px 250px;
+}
+#order{
+  text-align: center;
+  position: relative;
+  left: 38%;
+  top: 50px;
+/*contact*/
+}
+.contact{
+  margin-top: 150px;
+  background-image: linear-gradient(45deg, #444444 0%, #0f0f0f  51%, #383837  100%);
+
+}
+.Bienvenue{
+  font-family:monospace;
+  letter-spacing: 3px;
+  color:#bebcbc ;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+.crtmap{
+  box-shadow: blanchedalmond 10px 10px 10px  ;
+}
+/*formolaire*/
+.singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 650px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  box-shadow: 16px 16px 32px #c8c8c8,
+        -16px -16px 32px #fefefe;
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 350px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid~span,
+.inputBox1 input:focus~span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/*social*/
+.bi {
+  width: 50px;
+  color: #bebcbc;
+}
+.bi-facebook:hover{
+  color: blue;
+}
+.bi-google:hover{
+  color: rgb(246, 246, 248);
+}
+.bi-instagram:hover{
+  color: rgb(195, 0, 255);
+}
+.bi-whatsapp:hover{
+  color: rgb(0, 255, 13);
+}
